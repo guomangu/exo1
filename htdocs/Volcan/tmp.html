@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <!-- On crée un container pour notre carousel -->
+    <div class="container">
+
+        <!-- On crée notre carousel -->
+        <div id="volcano" class="carousel slide" data-ride="carousel">
+
+            <!-- On crée une liste contenant les images -->
+            <div class="carousel-inner" role="listbox">
+
+                <!-- On défini l'image active de départ -->
+                <div class='carousel-item active'>
+                    <!-- On crée une balise figure avec notre image pour pouvoir inserer une legende -->
+                    <figure><legend>plop</legend>
+                            <img class='d-block w-100' src="/photo/1.jpg" alt='alt' class = 'img-responsive'>
+                    </figure>
+                </div>
+
+                <!-- On crée les autres images -->
+                <div class='carousel-item'>
+                    <figure><legend>plop1</legend>
+                            <img class='d-block w-100' src="/photo/2.jpg" alt='alt1' class = 'img-responsive'>
+                    </figure>
+                </div>
+
+                <div class='carousel-item'>
+                    <figure><legend>plop2</legend>
+                            <img class='d-block w-100' src="/photo/3.jpg" alt='alt2' class = 'img-responsive'>
+                    </figure>
+                </div>
+
+            </div>
+
+            <!-- On crée le bouton "previous" -->
+            <a href="#volcano" class="carousel-control-prev" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+
+            <!-- On crée le bouton "next" -->
+            <a class="carousel-control-next" href="#volcano" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+
+        </div>
+
+    </div>
+    
+</body>

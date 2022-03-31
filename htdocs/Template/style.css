@@ -1,0 +1,245 @@
+/*Importation de police*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/*Variables*/
+
+:root {
+    --header-color:#587a91;
+    --main-font-color: #29226b;
+    --main-background-color: #c9d7e6;
+    --main-shadow-box: #a0bfcc;
+    --sub-background-color: #cbd1d6;
+    --li-hover-color: #7bcfc7;
+    --pading-left-header: 14vw;
+    --header-footer-font-color: white;
+    --sub-li-border: white;
+    --li-width: 12vw;
+    --global-height: 86.5vh;
+    --form-background-color: #e5ecf0;
+}
+
+/*Organisation de base*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    color: var(--main-font-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 2vh;
+    border-collapse: collapse;
+}
+
+body{
+
+    height: var(--global-height);
+    background-color: var(--main-background-color);
+}
+
+header{
+    background-color: var(--header-color);
+    display: inline-block;
+    text-align: center;
+    padding-left: var(--pading-left-header);
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 8vh;
+    
+}
+
+.main{
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 65%;
+    box-shadow: inset 0 0 1em  var(--main-shadow-box);
+    background-color: var(--main-background-color);
+    position: relative;
+    top: 5.6vh;
+}
+
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 8vh;
+    background-color: var(--header-color);
+    text-align: center;
+    color: var(--header-footer-font-color);
+    padding-top: 2vh;
+    z-index: 5;
+}
+
+#logo{
+    position: absolute;
+    width: 13vw;
+    left: 2vw;
+    top: 10vh;
+    z-index: 10;
+}
+
+/*menu déoulant*/
+
+
+#menu li{
+    float: left;
+    margin: auto;
+    width: var(--li-width);
+    background-color: var(--header-color);
+}
+
+
+#menu li a{
+    display: inline-block;
+    padding: 1.3em;
+    color: var(--header-footer-font-color);
+}
+
+
+#menu li ul {
+    position:absolute;
+    display: none;
+}
+
+.sub li{
+    border: 1px var(--sub-li-border) solid;
+    width: var(--li-width);
+    position: relative;
+    top: 0.5vh;
+}
+
+
+#menu li:hover ul li {
+    float: none;
+    margin-top: -1px;
+}
+
+#menu ul li:hover ul {
+    display: table;
+    opacity: 0.9;
+}
+
+#menu li a:hover {
+    color: var(--li-hover-color);
+}
+
+/*Barre de navigation*/
+
+#barNav{
+    position: absolute;
+    top: 34%;
+    left: 0.75%;
+    width: 16%;
+    box-shadow: 0 0 5pt 5pt var(--form-background-color);
+    background-color: var(--header-color);
+}
+
+#barNav li{
+    color: var(--header-footer-font-color);
+    padding: 3vh;
+    text-align: center;
+    height: 3vh;
+}
+
+#barNav li a{
+
+    color: var(--header-footer-font-color);
+}
+
+#barNav li a:hover {
+    color: var(--li-hover-color);
+}
+
+#titreBarNav{
+    font-size: 1.5em;
+    color: var(--header-footer-font-color);
+}
+
+/*aside*/
+
+aside{
+    position: absolute;
+    top: 15vh;
+    right: 3vw;
+    text-align: center;
+    background-color: var(--header-color);
+    padding: 2vh;
+    box-shadow: 0 0 5pt 5pt var(--form-background-color);
+    width: 12.5vw;
+}
+
+aside p{
+    color: var(--header-footer-font-color);
+}
+
+#login{
+    color: var(--header-footer-font-color);
+    width: 10vw;
+}
+
+#login:hover{
+    color: var(--li-hover-color);
+}
+
+#mainDisconnect:hover, #mainInscription:hover{
+    box-shadow: 0 0 18px var(--main-shadow-box);
+}
+
+#mainDisconnect, #mainInscription{
+    display: none;
+}
+
+/*Inputs*/
+
+input[type=button], input[type=submit], input[type=reset]{
+    box-shadow: inset 0 0 1em  var(--main-shadow-box);
+    width: 10vw;
+    margin-top: 2vh;
+    height: 5vh;
+    border-radius: 2vh;
+}
+
+input[type=text]:disabled, input[type=password]:disabled, input[type="tel"]:disabled, input[type="date"]:disabled,
+textarea:disabled, select:disabled{
+    box-shadow: none!important;
+    opacity: 0.8!important;
+}
+
+input[type=text], input[type=password], input[type="tel"], input[type="date"]{
+    width: 25vw;
+    margin-top: 2vh;
+    height: 5vh;
+    border-radius: 2vh;
+    padding-left: 1vh;
+    box-shadow: inset 0 0 1em  var(--main-shadow-box);
+    border: grey 1px solid;
+    color: var(--main-font-color);
+
+}
+
+input[type="text"]:focus, textarea:focus, input[type="date"]:focus, input[type="password"]:focus {
+
+    outline: none;
+    box-shadow: 0 0 3pt 2pt var(--header-color);
+}
+
+input:focus{
+    outline: none;
+}
+
+input:hover, textarea:hover, select:hover{
+    box-shadow: 0 0 5pt 3pt var(--header-color);
+}
+
+/*Animation*/
+
+@keyframes blink { 
+    from { opacity: 1.0; }
+    to { opacity: 0.0; }
+}

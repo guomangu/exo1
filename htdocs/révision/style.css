@@ -1,0 +1,54 @@
+/* Main */
+
+:root {
+    --header-color:#587a91;
+    --main-font-color: #29226b;
+    --main-background-color: #c9d7e6;
+    --main-shadow-box: #a0bfcc;
+    --sub-background-color: #cbd1d6;
+    --li-hover-color: #7bcfc7;
+    --pading-left-header: 14vw;
+    --header-footer-font-color: white;
+    --sub-li-border: white;
+    --li-width: 12vw;
+    --global-height: 87vh;
+    --form-background-color: #e5ecf0;
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    color: var(--main-font-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 2vh;
+}
+
+/* Structure */
+
+#logo{
+    position: absolute;
+    top: 10px;
+    left: 30px;
+}
+
+header{
+    text-align: center;
+}
+
+body{
+    background-image:url(/Beach-Background-web.png);
+    background-attachment:fixed;
+}
+
+h1{
+    font-size: 3em;
+}
+
+#str{
+    font-size: 1.2em;
+    font-weight: bold;
+}

@@ -1,0 +1,9 @@
+{
+    "name": "demo/adress",
+    "description": "test pour twig",
+    "type": "project",
+    "minimum-stability": "dev",
+    "require": {
+        "twig/twig": "3.x-dev"
+    }
+}

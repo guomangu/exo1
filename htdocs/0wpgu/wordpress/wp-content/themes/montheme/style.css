@@ -1,0 +1,13 @@
+/* Theme Name: sworltestgu */
+
+.main{
+    height: 100vh;
+    display:grid;
+    grid-template-rows: 1fr auto 1fr;
+    grid-template-columns: 1fr auto 1fr;
+}
+
+.sumain{
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
